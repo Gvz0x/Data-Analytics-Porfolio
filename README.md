@@ -1,4 +1,4 @@
-# Data Portfolio
+# Data Analytics Portfolio
 
 Hello there! 
 
