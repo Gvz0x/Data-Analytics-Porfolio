@@ -10,4 +10,5 @@ I'll drop the Tableau link and BigQuery link below for you to check out my work 
 
 
 Tableau: https://public.tableau.com/app/profile/angelo.gabriel.valenzuela/viz/PizzaShopv2/SalesDashboard
+
 BigQuery: https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1slight-truth-421007!2sKaggle_Pizza_Restaurant
