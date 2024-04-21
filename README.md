@@ -8,7 +8,11 @@ Feel free to check out the PDF files for the step by step process of how I accom
 
 
 **Project List**
-1. Project Pizza
+1. Pizza Restaurant Analysis
+
+2. Trip Advisor Sentiment Analysis (TBA)
+
+3. Solana Whale Alert (TBA)
 
 Tableau: https://public.tableau.com/app/profile/angelo.gabriel.valenzuela/viz/PizzaShopv2/SalesDashboard
 
