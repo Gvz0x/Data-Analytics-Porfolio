@@ -7,7 +7,8 @@ This is a repository for the documentation of my data analytics projects
 Feel free to check out the PDF files for the step by step process of how I accomplished my work.
 
 
-**1. Project Pizza**
+**Project List**
+1. Project Pizza
 
 Tableau: https://public.tableau.com/app/profile/angelo.gabriel.valenzuela/viz/PizzaShopv2/SalesDashboard
 
