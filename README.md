@@ -14,9 +14,8 @@ BigQuery: https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1slight-trut
 
 Tableau:  https://public.tableau.com/app/profile/angelo.gabriel.valenzuela/viz/PizzaShopv2/SalesDashboard
 
-2. Trip Advisor Sentiment Analysis (TBA)
+2. Cafe Branch Spatial Sales Analysis (TBA)
 
-3. Solana Whale Alert (TBA)
-
+3. Restaurant Spatial Location Analysis (TBA)
 
 
