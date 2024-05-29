@@ -1,0 +1,65 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load the dataset
+df = pd.read_csv('C:/Users/Angelo/Downloads/Airplane_Crashes_and_Fatalities_Since_1908.csv')
+
+# Initial Inspection
+print(df.tail())
+
+# Variable types
+print(df.info())
+
+# Descriptive Statistics
+print(df.describe())
+
+# Check for missing values
+print(df.isnull().sum())
+
+# Convert 'Date' column to datetime
+df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
+
+# Drop rows with missing 'Date' after conversion
+df.dropna(subset=['Date'], inplace=True)
+
+# Drop duplicates
+df.drop_duplicates(inplace=True)
+
+# Data Transformation
+# Extract year, month, day, and day of the week from the 'Date' column
+df['Year'] = df['Date'].dt.year
+df['Month'] = df['Date'].dt.month
+df['Day'] = df['Date'].dt.day
+df['DayOfWeek'] = df['Date'].dt.dayofweek
+
+# Calculate for Survival Rate %
+df['SurvivalRate'] = 1 - (df['Fatalities'] / df['Aboard'])
+
+# Univariate Analysis
+plt.figure(figsize=(10, 6))
+sns.histplot(df['Year'], kde=True)
+plt.title('Distribution of Crashes Over Years')
+plt.show()
+
+# Analyze crashes by location
+top_locations = df['Location'].value_counts().head(10)
+plt.figure(figsize=(10, 6))
+sns.barplot(x=top_locations.values, y=top_locations.index)
+plt.title('Top 10 Locations with Most Crashes')
+plt.show()
+
+# Analyze crashes by operator
+top_operators = df['Operator'].value_counts().head(10)
+plt.figure(figsize=(10, 6))
+sns.barplot(x=top_operators.values, y=top_operators.index)
+plt.title('Top 10 Operators with Most Crashes')
+plt.show()
+
+# Analyze crashes by aircraft type
+top_aircraft_types = df['Type'].value_counts().head(10)
+plt.figure(figsize=(10, 6))
+sns.barplot(x=top_aircraft_types.values, y=top_aircraft_types.index)
+plt.title('Top 10 Aircraft Types with Most Crashes')
+plt.show()
